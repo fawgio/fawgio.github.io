@@ -1,4 +1,4 @@
-header{
+/*header{
 	background-color: #E43AA9;
 	padding: 10px;
 	display: flex;
@@ -15,10 +15,14 @@ header a{
 	padding-top: 1%; 
 	text-align: center;
     text-decoration: none;
-}
+}*/
 
 body{
 	margin: 0px;
+}
+
+main{
+	margin: 40px;
 }
 
 *{
@@ -29,11 +33,107 @@ body{
 	font-size: 20px;
 }
 
-#blocks{
+.flex{
 	display: flex;
 	flex-wrap: wrap;
-	padding-left: 2%;
 }
+
+#menu{
+	position: fixed;
+	top:0;
+	font-size: 2.5vw;
+	left:90vw;
+}
+
+.menu-clicked{
+	color: #E43AA9;
+	background-color: white;
+}
+
+#menu-wrap{
+	display: none;
+	height: 100vh;
+	padding: 3vh 3vw;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+
+@keyframes shadow {
+  from {box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);}
+  to {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+}
+
+@keyframes fawanim{
+ 	0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+} 
+
+.mh1{
+	font-size: 25.6vh;
+	flex-basis: 60%;
+	margin:0px;
+	margin-top: auto; 
+	margin-bottom: auto;
+}
+
+.mh1-mobile{
+	font-size: 25.6vw;
+	flex-basis: 100%;
+	margin: 0;
+}
+
+.wrapper1{
+	background: rgb(255,66,188);
+	background: -moz-linear-gradient(left,  rgba(255,66,188,1) 10%, rgba(186,48,137,1) 51%, rgba(255,66,188,1) 95%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(10%,rgba(255,66,188,1)), color-stop(51%,rgba(186,48,137,1)), color-stop(95%,rgba(255,66,188,1)));
+	background: -webkit-linear-gradient(left,  rgba(255,66,188,1) 10%,rgba(186,48,137,1) 51%,rgba(255,66,188,1) 95%);
+	background: -o-linear-gradient(left,  rgba(255,66,188,1) 10%,rgba(186,48,137,1) 51%,rgba(255,66,188,1) 95%);
+	background: -ms-linear-gradient(left,  rgba(255,66,188,1) 10%,rgba(186,48,137,1) 51%,rgba(255,66,188,1) 95%);
+	background: linear-gradient(to right,  rgba(255,66,188,1) 10%,rgba(186,48,137,1) 51%,rgba(255,66,188,1) 95%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff42bc', endColorstr='#ff42bc',GradientType=1 );
+	padding-bottom: 2vh;
+	animation:fawanims 1s linear forwards, fawanim 10s linear infinite;
+	background-size: 600% 600%;
+	width: 0px;
+	display: block;
+}
+
+.wrapper2{
+	flex-basis: 40%;
+	margin-top: auto; 
+	margin-bottom: auto;
+}
+
+.wrapper2-mobile{
+	flex-basis: 100%;
+	margin: 0;
+}
+
+.mp{
+	font-size: 11vh;
+}
+
+.mp-mobile{
+	font-size: 11vw;
+}
+
+@keyframes fawanims{
+ 	from{width: 0px}
+    to{width:100%}
+}
+@keyframes menu{
+ 	0%{
+ 		color: white;
+ 	}
+    100%{
+    	color: #E43AA9;
+    }
+} 
 
 .bnews h2::before{
 	background-color: #E43AA9; 
@@ -51,12 +151,12 @@ body{
 	margin:	10px;
 	padding: 10px;
 	width: auto;
-	height: 200px;
+	height: 32vh;
+	overflow-y: auto;
 }
 
-@keyframes shadow {
-  from {box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);}
-  to {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.block-mobile{
+	height: 32vw;
 }
 
 .block:hover{
@@ -65,8 +165,21 @@ body{
 }
 
 
-.block p{
+.block p,.block a{
 	text-align: justify;
+	font-size: 3vh;
+}
+
+.block-mobile p,.block-mobile a{
+	font-size: 3vw;
+}
+
+.block h2{
+	font-size: 5vh;
+}
+
+.block-mobile h2{
+	font-size: 5vw;
 }
 
 .moreb{

@@ -6,22 +6,34 @@
 	</head>
 	<body>
 		<header>
-			<div>
-				<h1 class="header">Fawgio</h1>
-				<h2 class="sub header">Alex Boolba</h2>
+			<h1 id="menu"><a href="#goto">GOTO</a></h1>
+
+			<a name ="goto"></a>
+			<div class="menu-clicked" id="menu-wrap">
+				<p class="mp"><a href="#myproj">My projects</a><br></p>
+				<p class="mp"><a href="#news">What's up</a></p>
 			</div>
 		</header>
 		<main>
-			<div id=blocks>
-				<div class="block" id="bmain">
-					<h2>Welcome to Fawgio's page!</h2>
-					<div class=content>
-						<p>I am a programmer and I work on 11l Editor. I program in  Java, C#, JS, 11l, Pascal and Sinclair BASIC. You can email me in English or Russian</p>
-						<a class="moreb" style="display: block;" href=mailto:asbulba09@gmail.com><img src=https://img.shields.io/badge/asbulba09%40gmail.com-E43AA9?style=flat-square&label=Email%20me&labelColor=white
-						alt="gmail"></a>
-					</div>
+			<div class="flex">
+				<h1 class="mh1">Hi, I am <span class="wrapper1"><span style="background-color: white; width: 100%; display: block;">Fawgio!</span></span></h1>
+				<div class="wrapper2">
+					<p class="mp">A beginner Java, 11l and Web developer</p>
 				</div>
-
+				<div></div>
+			</div>
+			<div class="flex">
+				<h1 class="mh1">Welcome to my page!</span></h1>
+				<div class="wrapper2">
+					<p class="mp">I am a programmer and I work on 11l Editor. I program in  Java, C#, JS, 11l, Pascal and Sinclair BASIC. You can 
+					<a href=mailto:asbulba09@gmail.com><img width="400vh" src=https://img.shields.io/badge/asbulba09%40gmail.com-E43AA9?style=flat-square&label=Email%20me&labelColor=white
+					alt="gmail"></a> in English or Russian</p>
+				</div>
+				<div></div>
+			</div>
+			<a name="myproj"></a>
+			<h1 style="display: block;" class="mh1"><span class="wrapper1"><span style="background-color: white; ">My projects</span></span></h1>
+			<div class="flex">
 				<div class="block" id="bmain2">
 					<h2>11l Editor</h2>
 					<div class=content>
@@ -30,45 +42,19 @@
 						<a class="moreb" href="https://github.com/fawgio/11l-editor">GitHub</a>
 					</div>
 				</div>
-
-				<div class="block" id="bmain3">
-					<h2>Other projects</h2>
-					<div class=content>
-						<p>There were some projects like Fawgio the Game, and Fawgio WebOffice. They aren't available anymore because my website was blocked.</p>
-					</div>
-				</div>
-
+			</div>
+			<a name="news"></a>
+			<h1 style="display: block; text-align: left;" class="mh1"><span class="wrapper1"><span style="background-color: white; ">What's up?</span></span></h1>
+			<div class="flex">
 				<div class="block bnews" id="b1">
 					<h2>I just made a new website and am writing this post</h2>
 					<div class=content>
 						<p>Hi! I hope you like the new design.</p>
 					</div>
 				</div>
-
-				<div class="block" id="bexample">
-					<h2>An example post</h2>
-					<div class=content>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus id interdum velit laoreet id. Placerat in egestas erat imperdiet sed euismod. Tincidunt vitae semper quis lectus. Semper viverra nam libero justo laoreet sit.</p>
-					</div>
-				</div>
-
-				<div class="block" id="bexample2">
-					<h2>Laoreet suspendisse interdum consectetur libero</h2>
-					<div class=content>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Quis viverra nibh cras pulvinar mattis nunc sed.</p>
-					</div>
-				</div>
-
-				<br>
-
-				<div class="block" id="bexamplelong">
-					<h2>Laoreet suspendisse interdum consectetur libero</h2>
-					<div class=content>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo vel fringilla est ullamcorper. Scelerisque fermentum dui...</p>
-						<a class="moreb">More</a>
-					</div>
-				</div>
 			</div>
 		</main>
 	</body>
 </html>
+
+<script type="text/javascript" src="script.js"></script>
