@@ -1,60 +1,53 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Fawgio</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<header>
-			<h1 id="menu"><a href="#goto">GOTO</a></h1>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Fawgio's</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
-			<a name ="goto"></a>
-			<div class="menu-clicked" id="menu-wrap">
-				<p class="mp"><a href="#myproj">My projects</a><br></p>
-				<p class="mp"><a href="#news">What's up</a></p>
-			</div>
-		</header>
-		<main>
-			<div class="flex">
-				<h1 class="mh1">Hi, I am <span class="wrapper1"><span style="background-color: white; width: 100%; display: block;">Fawgio!</span></span></h1>
-				<div class="wrapper2">
-					<p class="mp">A beginner Java, 11l and Web developer</p>
-				</div>
-				<div></div>
-			</div>
-			<div class="flex">
-				<h1 class="mh1">Welcome to my page!</span></h1>
-				<div class="wrapper2">
-					<p class="mp">I am a programmer and I work on 11l Editor. I program in  Java, C#, JS, 11l, Pascal and Sinclair BASIC. You can 
-					<a href=mailto:asbulba09@gmail.com><img width="400vh" src=https://img.shields.io/badge/asbulba09%40gmail.com-E43AA9?style=flat-square&label=Email%20me&labelColor=white
-					alt="gmail"></a> in English or Russian</p>
-				</div>
-				<div></div>
-			</div>
-			<a name="myproj"></a>
-			<h1 style="display: block;" class="mh1"><span class="wrapper1"><span style="background-color: white; ">My projects</span></span></h1>
-			<div class="flex">
-				<div class="block" id="bmain2">
-					<h2>11l Editor</h2>
-					<div class=content>
-						<p>It's an unofficial 11l editor, syntax highlighter and compiler.</p>
-						<a class="moreb" href="11l-editor">Open</a>
-						<a class="moreb" href="https://github.com/fawgio/11l-editor">GitHub</a>
-					</div>
-				</div>
-			</div>
-			<a name="news"></a>
-			<h1 style="display: block; text-align: left;" class="mh1"><span class="wrapper1"><span style="background-color: white; ">What's up?</span></span></h1>
-			<div class="flex">
-				<div class="block bnews" id="b1">
-					<h2>I just made a new website and am writing this post</h2>
-					<div class=content>
-						<p>Hi! I hope you like the new design.</p>
-					</div>
-				</div>
-			</div>
-		</main>
-	</body>
+    <body>
+        <header>
+            <img src="images/FLogoDark.png" width="50">
+            <p><a href="#proj">My projects</a></p>
+            <p><a href="#wup">What's up</a></p>
+            <p><a href="#contacts">Contacts</a></p>
+        </header>
+        <div class="container">
+            <h1 class="text-glow">Welcome to my page</h1>
+
+            <p>
+                I am Alex Boolba "Fawgio", a beginner Java, 11l and Web developer
+            </p>
+            
+            <a name="proj"></a>
+            <h2>My projects</h2>
+            <div class="block">
+                <h3>11l Editor</h3>
+                <p>It's a non-official editor, syntax highlighter and compiler for 11l language </p>
+                <a class="button" href="11l-editor/index.html">Open</a>
+                <a class="button" href="https://github.com/fawgio/11l-editor/"><img src="images/github-mark.png" class="octocat"> GitHub</a>
+            </div>
+            
+            <a name="wup"></a>
+            <h2>What's up</h2>
+            <div class="block">
+                <h3>Redesign of the site</h3>
+                <p>I really hope you like new design</p>
+                <p class="date">05/05/24</p>
+            </div>
+            
+            <a name="contacts"></a>
+            <h2>Contacts</h2>
+            <div class="block">
+                <p><a href="mailto:asbulba09@gmail.com" class="text-glow">Email me</a> in English or Russian<br>
+                <a href="https://github.com/fawgio" class="text-glow">Follow me</a> on GitHub</p>
+            </div>
+        </div>
+
+        <footer>
+            <p class="text-glow">Copyleft. All lefts reversed.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
-
-<script type="text/javascript" src="script.js"></script>

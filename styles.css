@@ -1,0 +1,151 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    margin: 1em;
+    padding: 1em;
+}
+
+header p{
+    display: none;
+}
+
+header:hover p{
+    display: inline;
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 770px) {
+    header:hover p{
+        display: block;
+        margin: 20px 0;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    animation: fadeIn 2s;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 40px 0;
+    animation: fadeIn 2s;
+}
+
+h3 {
+    font-size: 25px;
+    margin: 25px 0;
+    animation: fadeIn 2s;
+}
+
+p {
+    font-size: 24px;
+    animation:
+        fadeIn 2s,
+        slideIn 2s;
+}
+
+.block{
+    padding: 1px 30px;
+    box-shadow: 0 0 20px white,
+        0 0 20px white,
+        0 0 20px white,
+        0 0 20px white,
+        0 0 20px white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.button {
+    background-color: #e43aa9;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow:
+            0 0 3px #e43aa9,
+            0 0 5px #e43aa9;
+    }
+    50% {
+        box-shadow:
+            0 0 20px #e43aa9,
+            0 0 30px #e43aa9;
+    }
+    100% {
+        box-shadow:
+            0 0 3px #e43aa9,
+            0 0 5px #e43aa9;
+    }
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+.text-glow{
+    text-shadow:
+        0 0 3px #fff,
+        0 0 5px #fff,
+        0 0 7px #e43aa9,
+        0 0 12px #e43aa9,
+        0 0 25px #e43aa9,
+        0 0 35px #e43aa9,
+        0 0 40px #e43aa9;
+}
+
+.octocat{
+    margin-top: -1000px;
+    margin-bottom: -10px;
+    margin-left: -20px;
+    width: 30px;
+}
+
+.date{
+    font-size: 20px;
+    margin: 0 0 12px;
+    color: grey;
+}
