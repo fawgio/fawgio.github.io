@@ -1,195 +1,84 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
+p{
+    font-family: "Noto Sans", sans-serif;
 }
 
-header{
-    margin: 1em;
-    padding: 1em;
-    height: 50px;
+#name {
+    font-size: xxx-large;
+    font-weight: 600;
+    margin: 10 0;
 }
 
-.fixed-header{
-    position: fixed;
-    background-color:black;
+#about{
+    font-size: x-large;
+    margin: 10 0;
 }
 
-.header-logo{
-    position: fixed;
+#fl{
+    display: block;
+    margin: auto;
+    width: 25%;
 }
 
-.navi{
-    background-color:black;
-}
-
-header p{
-    display: none;
-}
-
-header:hover p{
-    display: inline;
-    margin: 0 20px;
-}
-
-header:hover .navi{
-    display: ruby-text;
-    animation: fadeIn 2s, slideIn 2s;
-    padding: 1em;
-}
-
-header:hover .fixed-header{
-    width: calc(100% - 1em - 50px - 8px - 20px);
-    height: calc(50px+1em);
-    animation: fadeIn 2s;
-    left: calc(1em + 50px + 8px + 20px);
-    top: calc(1em+8px);
-}
-
-@media screen and (max-width: 770px){
-    header:hover p{
-        display: block;
-        margin: 20px 0;
-    }
-    
-    header:hover .navi{
-        display: block;
-        padding: 20px;
-    }
-    
-    header:hover .fixed-header{
-        width: 35%;
-        height: 20%;
-        top: 100px;
-        left: auto;
-    }
-    
-    .fixed-header{
-        background-color: unset;
-    }
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
+#info{
     text-align: center;
-}
-
-h1 {
-    font-size: 50px;
-    margin-bottom: 50px;
-    animation: fadeIn 2s;
-}
-
-h2 {
-    font-size: 40px;
-    margin: 40px 0;
-    animation: fadeIn 2s;
-}
-
-h3 {
-    font-size: 25px;
-    margin: 25px 0;
-    animation: fadeIn 2s;
-}
-
-p {
-    font-size: 24px;
-    animation:
-        fadeIn 2s,
-        slideIn 2s;
-}
-
-.block{
-    padding: 1px 30px;
-    margin: 30px;
-    box-shadow: 0 0 20px white,
-        0 0 20px white,
-        0 0 20px white,
-        0 0 20px white,
-        0 0 20px white;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    border-radius: 3vw;
+    padding: 5%;
+    background-color: white;
+    box-shadow: 0 0 50px #222;
+    animation: unhov 1s;
+    scale: 1;
 }
 
 a{
     text-decoration: none;
-    color: unset;
+    color: rgba(202,1,128,1);
 }
 
-@keyframes slideIn {
+@keyframes hov{
     from {
-        transform: translateY(50px);
+        box-shadow: 0 0 50px #222;
+        scale: 1;
     }
     to {
-        transform: translateY(0);
+        box-shadow: none;
+        scale: 0.95;
     }
 }
 
-.button {
-    background-color: #e43aa9;
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    animation: glow 2s ease-in-out infinite;
-}
-
-@keyframes glow {
-    0% {
-        box-shadow:
-            0 0 3px #e43aa9,
-            0 0 5px #e43aa9;
+@keyframes unhov{
+    to {
+        box-shadow: 0 0 50px #222;
+        scale: 1;
     }
-    50% {
-        box-shadow:
-            0 0 20px #e43aa9,
-            0 0 30px #e43aa9;
-    }
-    100% {
-        box-shadow:
-            0 0 3px #e43aa9,
-            0 0 5px #e43aa9;
+    from {
+        box-shadow: none;
+        scale: 0.95;
     }
 }
 
-footer{
-    text-align: center;
-    padding: 20px;
+#info:hover{
+    animation: hov 1s;
+    box-shadow: none;
+    scale: 0.95;
 }
 
-.text-glow{
-    text-shadow:
-        0 0 3px #fff,
-        0 0 5px #fff,
-        0 0 7px #e43aa9,
-        0 0 12px #e43aa9,
-        0 0 25px #e43aa9,
-        0 0 35px #e43aa9,
-        0 0 40px #e43aa9;
+.social{
+    display: inline;
+    margin: 10px;
 }
 
-.octocat{
-    margin-top: -1000px;
-    margin-bottom: -10px;
-    margin-left: -20px;
-    width: 30px;
+.social img{
+    width: 7vh;
 }
 
-.date{
-    font-size: 20px;
-    margin: 0 0 12px;
-    color: grey;
+body{
+    margin: 0;
+}
+
+div#page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
